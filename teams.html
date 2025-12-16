@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bangladesh Premier League I</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="logo-container">
+      <a href="index.html"><img src="assets/logo_bpl.png" alt="BPL Logo" class="nav-logo" /></a>
+      <span class="nav-title">Bangladesh Premier League I</span>
+    </div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="fixtures.html">Fixtures</a>
+      <a href="points.html">Points Table</a>
+      <a href="stats.html">Stats</a>
+      <a href="#" class="active">Teams</a>
+    </div>
+    <button class="btn-primary">Buy Tickets</button>
+  </nav>
+
+  <main style="padding-top: 100px;">
+    <section id="teams" class="section">
+      <div class="section-header">
+        <h2>Teams</h2>
+      </div>
+      <div class="teams-grid" id="teams-container">
+        <!-- Populated by JS -->
+      </div>
+    </section>
+
+    <!-- Squad Modal -->
+    <div id="squad-modal" class="modal-overlay">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 id="modal-team-name">Team Name</h2>
+          <button class="close-modal">&times;</button>
+        </div>
+        <div id="modal-squad-list" class="squad-list">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Bangladesh Premier League. All rights reserved.</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+
+</html>

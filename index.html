@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bangladesh Premier League I</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="logo-container">
+      <img src="assets/logo_bpl.png" alt="BPL Logo" class="nav-logo" />
+      <span class="nav-title">Bangladesh Premier League I</span>
+    </div>
+    <div class="nav-links">
+      <a href="fixtures.html">Fixtures</a>
+      <a href="points.html">Points Table</a>
+      <a href="stats.html">Stats</a>
+      <a href="teams.html">Teams</a>
+    </div>
+    <button class="btn-primary">Buy Tickets</button>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-content">
+      <div class="match-tag">SEASON OPENER</div>
+      <h1>THE BATTLE <br><span class="text-gradient">BEGINS</span></h1>
+      <div class="match-preview">
+        <div class="team">
+          <img src="assets/logo_sylhet_titans.png" alt="Sylhet Titans" />
+          <span>Sylhet</span>
+        </div>
+        <div class="vs">VS</div>
+        <div class="team">
+          <img src="assets/logo_rajshahi_warriors.png" alt="Rajshahi Warriors" />
+          <span>Rajshahi</span>
+        </div>
+      </div>
+
+      <div class="hero-actions">
+        <button class="btn-primary">Watch Live</button>
+        <button class="btn-secondary">Match Center</button>
+      </div>
+    </div>
+
+    <!-- Countdown Timer (Right Side) -->
+    <div id="home-countdown" class="hero-countdown">
+      <div class="time-card">
+        <span id="c-days" class="time-digit">00</span>
+        <span class="time-label">Days</span>
+      </div>
+      <div class="time-card">
+        <span id="c-hours" class="time-digit">00</span>
+        <span class="time-label">Hours</span>
+      </div>
+      <div class="time-card">
+        <span id="c-minutes" class="time-digit">00</span>
+        <span class="time-label">Mins</span>
+      </div>
+      <div class="time-card">
+        <span id="c-seconds" class="time-digit">00</span>
+        <span class="time-label">Secs</span>
+      </div>
+    </div>
+
+    <div class="hero-overlay"></div>
+  </header>
+
+  <main>
+    <section id="fixtures" class="section">
+      <div class="section-header">
+        <h2>Upcoming Matches</h2>
+        <a href="fixtures.html" class="view-all">View All</a>
+      </div>
+      <div class="fixtures-grid" id="fixtures-container">
+        <!-- Populated by JS -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Bangladesh Premier League. All rights reserved.</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
